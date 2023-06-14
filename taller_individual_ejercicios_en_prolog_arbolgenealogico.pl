@@ -1,5 +1,5 @@
-INTELIGENCIA ARTIFICIAL.
-Nombres y Apellidos: Winter Aníbal Meza Jiménez.
+% INTELIGENCIA ARTIFICIAL.
+% Nombres y Apellidos: Winter Aníbal Meza Jiménez.
 Curso: Octavo "A" 2023(1).
 Práctica: Taller individual 1.
 Fecha: Martes, 14 de junio de 2023.
