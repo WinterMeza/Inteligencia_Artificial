@@ -1,3 +1,4 @@
+# Hechos con los datos necesarios
 hombre(isidoro).
 hombre(klever).
 hombre(manuel).
@@ -26,7 +27,7 @@ esposos(griselda,isidoro).
 esposos(mariuxi,klever).
 esposos(olga,manuel).
 
-
+# Reglas
 esposo(X, Y) :- esposos(X, Y), hombre(X).
 esposa(X, Y) :- esposos(X, Y), mujer(X).
 abuelo(X, Y) :- familia(P, Y), familia(X, P), hombre(X).
@@ -47,3 +48,24 @@ tio(X, Y) :- familia(Z, Y), (hermano(X, Z); cuñado(X, Z)).
 tia(X, Y) :- familia(Z, Y), (hermana(X, Z); cuñada(X, Z)).
 primo(X, Y) :- familia(Z, X), familia(W, Y), hermanos(Z, W), hombre(X).
 prima(X, Y) :- familia(Z, X), familia(W, Y), hermanos(Z, W), mujer(X).
+# Consultas 
+1.¿Quiénes son los hermanos de Manuel? 
+   ?-hermanos(X, manuel).
+2.¿Quién es el abuelo de Winter?
+   ?-abuelo(X, winter).
+3.¿Quiénes son los cuñados de Mariuxi?
+   ?-cuñados(X, mariuxi).
+4.¿Olga es la madre de Melani?
+	 ?-madre(olga, melani).
+5.¿Manuel es padre de Winter?
+   ?- padre(manuel, winter).
+6.¿Winter es nieto de Griselda?
+   ?- nieto(winter, griselda).
+7.¿Manuel es esposo de Mariuxi?
+   ?- esposos(manuel, mariuxi).
+8.¿Quines son los padres de Mariuxi?
+   ?-padre(X, mariuxi), madre(Y, mariuxi).
+9.¿Quiénes son los cuñados de Mariuxi?
+   ?-abuelo(X, melani), abuela(Y, melani).
+10.¿Manuel es mujer?
+   ?-mujer(manuel).
