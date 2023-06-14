@@ -59,19 +59,19 @@ prima(X, Y) :- familia(Z, X), familia(W, Y), hermanos(Z, W), mujer(X).
    ?-hermanos(X, manuel).
 % 2.¿Quién es el abuelo de Winter?
    ?-abuelo(X, winter).
-3.¿Quiénes son los cuñados de Mariuxi?
+% 3.¿Quiénes son los cuñados de Mariuxi?
    ?-cuñados(X, mariuxi).
-4.¿Olga es la madre de Melani?
+% 4.¿Olga es la madre de Melani?
 	 ?-madre(olga, melani).
-5.¿Manuel es padre de Winter?
+% 5.¿Manuel es padre de Winter?
    ?- padre(manuel, winter).
-6.¿Winter es nieto de Griselda?
+% 6.¿Winter es nieto de Griselda?
    ?- nieto(winter, griselda).
-7.¿Manuel es esposo de Mariuxi?
+% 7.¿Manuel es esposo de Mariuxi?
    ?- esposos(manuel, mariuxi).
-8.¿Quines son los padres de Mariuxi?
+% 8.¿Quines son los padres de Mariuxi?
    ?-padre(X, mariuxi), madre(Y, mariuxi).
-9.¿Quiénes son los cuñados de Mariuxi?
+% 9.¿Quiénes son los cuñados de Mariuxi?
    ?-abuelo(X, melani), abuela(Y, melani).
-10.¿Manuel es mujer?
+% 10.¿Manuel es mujer?
    ?-mujer(manuel).
