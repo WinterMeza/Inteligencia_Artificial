@@ -1,10 +1,10 @@
 % INTELIGENCIA ARTIFICIAL.
 % Nombres y Apellidos: Winter Aníbal Meza Jiménez.
-Curso: Octavo "A" 2023(1).
-Práctica: Taller individual 1.
-Fecha: Martes, 14 de junio de 2023.
-Docente: Ing. Hiraida Santana Cedeño, Mg. 
-# Hechos con los datos necesarios
+% Curso: Octavo "A" 2023(1).
+% Práctica: Taller individual 1.
+% Fecha: Martes, 14 de junio de 2023.
+% Docente: Ing. Hiraida Santana Cedeño, Mg. 
+% Hechos con los datos necesarios
 hombre(isidoro).
 hombre(klever).
 hombre(manuel).
@@ -33,7 +33,7 @@ esposos(griselda,isidoro).
 esposos(mariuxi,klever).
 esposos(olga,manuel).
 
-# Reglas
+% Reglas
 esposo(X, Y) :- esposos(X, Y), hombre(X).
 esposa(X, Y) :- esposos(X, Y), mujer(X).
 abuelo(X, Y) :- familia(P, Y), familia(X, P), hombre(X).
@@ -54,10 +54,10 @@ tio(X, Y) :- familia(Z, Y), (hermano(X, Z); cuñado(X, Z)).
 tia(X, Y) :- familia(Z, Y), (hermana(X, Z); cuñada(X, Z)).
 primo(X, Y) :- familia(Z, X), familia(W, Y), hermanos(Z, W), hombre(X).
 prima(X, Y) :- familia(Z, X), familia(W, Y), hermanos(Z, W), mujer(X).
-# Consultas 
-1.¿Quiénes son los hermanos de Manuel? 
+% Consultas 
+% 1.¿Quiénes son los hermanos de Manuel? 
    ?-hermanos(X, manuel).
-2.¿Quién es el abuelo de Winter?
+% 2.¿Quién es el abuelo de Winter?
    ?-abuelo(X, winter).
 3.¿Quiénes son los cuñados de Mariuxi?
    ?-cuñados(X, mariuxi).
